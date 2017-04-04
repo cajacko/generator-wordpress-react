@@ -1,0 +1,11 @@
+{
+  "generator-package-json": {
+    "promptValues": {
+      "authorName": "Charlie Jackson",
+      "authorEmail": "contact@charliejackson.com",
+      "authorUrl": "https://charliejackson.com",
+      "license": "MIT",
+      "engine": ">=6.9.1"
+    }
+  }
+}

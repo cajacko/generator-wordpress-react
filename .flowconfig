@@ -1,0 +1,11 @@
+[ignore]
+.*/node_modules/config-chain/**/*
+.*/node_modules/npm/**/*
+.*/node_modules/npmconf/**/*
+.*/node_modules/generator-flow/**/*
+
+[include]
+
+[libs]
+
+[options]
