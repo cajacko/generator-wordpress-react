@@ -6,8 +6,12 @@ const checkOutOfDatePackages = require('check-out-of-date-packages');
 
 module.exports = class extends Generator {
   initializing() {
-    const cwd = path.join(__dirname, '../../');
-    return checkOutOfDatePackages(cwd, 'Charlie Jackson');
+    // const cwd = path.join(__dirname, '../../');
+    // return checkOutOfDatePackages(cwd, 'Charlie Jackson');
+  }
+
+  initialiseGit() {
+    // return this.composeWith(require.resolve('generator-git-cj/generators/app'));
   }
 
   writing() {
@@ -22,6 +26,21 @@ module.exports = class extends Generator {
       this.destinationPath('./'),
       { variable: 'value' }
     );
+  }
+
+  wordpress() {
+    // this.spawnCommandSync('git', [
+    //   'submodule',
+    //   'add',
+    //   'git://github.com/WordPress/WordPress.git',
+    //   'cms/wordpress/wordpress'
+    // ]);
+  }
+
+  scriptPermissions() {
+    this.spawnCommandSync('chmod', ['+x', './scripts/install']);
+    this.spawnCommandSync('chmod', ['+x', './scripts/update']);
+    this.spawnCommandSync('chmod', ['+x', './scripts/wordpress-bash']);
   }
 
   readme() {

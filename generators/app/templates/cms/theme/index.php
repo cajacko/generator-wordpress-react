@@ -1,0 +1,1 @@
+Theme is alive
