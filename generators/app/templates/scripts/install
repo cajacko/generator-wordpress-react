@@ -8,3 +8,5 @@ docker build -t wordpress -f dockerfiles/wordpress .
 
 docker run -d --name mysql -p 3306:3306 --env-file ./.env mysql:5.7
 docker run --link mysql:mysql -p 80:80 -d --name wordpress --env-file ./.env wordpress
+
+docker-machine ip

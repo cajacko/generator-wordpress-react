@@ -14,37 +14,18 @@
  * @package WordPress
  */
 
-// Include local configuration
-if (file_exists(dirname(__FILE__) . '/local-config.php')) {
-	include(dirname(__FILE__) . '/local-config.php');
-}
+// // Include local configuration
+// if (file_exists(dirname(__FILE__) . '/local-config.php')) {
+// 	include(dirname(__FILE__) . '/local-config.php');
+// }
 
 // Global DB config
-if (!defined('DB_NAME')) {
-	define('DB_NAME', $_ENV['MYSQL_DATABASE']);
-}
-
-if (!defined('DB_USER')) {
-	define('DB_USER', $_ENV['MYSQL_USER']);
-}
-
-if (!defined('DB_PASSWORD')) {
-	define('DB_PASSWORD', $_ENV['MYSQL_PASSWORD']);
-}
-
-if (!defined('DB_HOST')) {
-	define('DB_HOST', $_ENV['MYSQL_HOST']);
-}
-
-/** Database Charset to use in creating database tables. */
-if (!defined('DB_CHARSET')) {
-	define('DB_CHARSET', 'utf8');
-}
-
-/** The Database Collate type. Don't change this if in doubt. */
-if (!defined('DB_COLLATE')) {
-	define('DB_COLLATE', '');
-}
+define('DB_NAME', $_ENV['MYSQL_DATABASE']);
+define('DB_USER', $_ENV['MYSQL_USER']);
+define('DB_PASSWORD', $_ENV['MYSQL_PASSWORD']);
+define('DB_HOST', $_ENV['MYSQL_HOST']);
+define('DB_CHARSET', 'utf8');
+define('DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -55,14 +36,14 @@ if (!defined('DB_COLLATE')) {
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'x+m&;VTSw96kta6jMQ(IiH^EdYZ@`#yk+w#]s&9B~t}Djx.[&<@Gomu%}C| /s;_');
-define('SECURE_AUTH_KEY',  '=.~~>xG(ajs0s-&$:u)Nl.Bt76%V9|az3S$r+x,_~]we=UlR{<xl^]+1}jUP)Z/L');
-define('LOGGED_IN_KEY',    '<qMePaWn}^UQs/|l_A9u3-ZZ#=&TXt#:j}Z(A2v|xkW[0>8-`ys&k<bNEi`A4rvh');
-define('NONCE_KEY',        '+fw2Fqwjj+)aq1~$6}w^H?Wm[QM48GyLGxo^*3oDUd!S;z=61-sEtUZ].S_(zc=9');
-define('AUTH_SALT',        'P 2VPBBH$AakZ]5A#k=lT}m0k<Bf6M)5PR$A~TYz@G0z-_{PjR@~O?G7lv}Jp+@S');
-define('SECURE_AUTH_SALT', '-aw.=Q3M5;A7qv?864ybTj4eBi|S.p F5|FLQ:i?)]?fuQ8%X Z,NrZw$,>R=f+w');
-define('LOGGED_IN_SALT',   't%JdEfa>wnLP&](M+Y`-?&(c^BAWQBJ|3{y3b%Fr|I|@4Rs:3@+hd7dT n0r3Q]X');
-define('NONCE_SALT',       '!|Cl?r^[Z H!7w+`;}c{+K}Xf.Xdq>O*4W5KvOYG:GunkYE(RcLKb8|*^WRw,PqK');
+define('AUTH_KEY', $_ENV['AUTH_KEY']);
+define('SECURE_AUTH_KEY', $_ENV['SECURE_AUTH_KEY']);
+define('LOGGED_IN_KEY', $_ENV['LOGGED_IN_KEY']);
+define('NONCE_KEY', $_ENV['NONCE_KEY']);
+define('AUTH_SALT', $_ENV['AUTH_SALT']);
+define('SECURE_AUTH_SALT', $_ENV['SECURE_AUTH_SALT']);
+define('LOGGED_IN_SALT', $_ENV['LOGGED_IN_SALT']);
+define('NONCE_SALT', $_ENV['NONCE_SALT']);
 
 /**#@-*/
 
@@ -72,7 +53,7 @@ define('NONCE_SALT',       '!|Cl?r^[Z H!7w+`;}c{+K}Xf.Xdq>O*4W5KvOYG:GunkYE(RcLK
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'cj_';
+$table_prefix  = $_ENV['TABLE_PREFIX'];
 
 /**
  * WordPress Localized Language, defaults to English.
@@ -84,25 +65,28 @@ $table_prefix  = 'cj_';
  */
 define('WPLANG', '');
 
+if ($_ENV['DEV']) {
+  $protocol = 'http';
+} else {
+  $protocol = 'https';
+}
+
 // $_SERVER['SERVER_PORT']
+$server_url = $protocol . '://' . $_SERVER['SERVER_NAME'];
+
+if ($_SERVER['SERVER_PORT'] && $_SERVER['SERVER_PORT'] !== '80') {
+  $server_url = $server_url . ':' . $_SERVER['SERVER_PORT'];
+}
 
 /**
  * Set custom paths
  *
  * These are required because wordpress is installed in a subdirectory.
  */
-if (!defined('WP_SITEURL')) {
-	define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
-}
-if (!defined('WP_HOME')) {
-	define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME'] . '');
-}
-if (!defined('WP_CONTENT_DIR')) {
-	define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
-}
-if (!defined('WP_CONTENT_URL')) {
-	define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/content');
-}
+define('WP_SITEURL', $server_url . '/wordpress');
+define('WP_HOME', $server_url);
+define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
+define('WP_CONTENT_URL', $server_url . '/content');
 
 /**
  * For developers: WordPress debugging mode.
@@ -111,7 +95,7 @@ if (!defined('WP_CONTENT_URL')) {
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
  */
-if (!defined('WP_DEBUG')) {
+if ($_ENV['DEV']) {
 	define('WP_DEBUG', true);
 }
 
@@ -122,14 +106,14 @@ define( 'SAVEQUERIES', true );
 // iThemes Security Config Details: 2
 define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settings > WordPress Tweaks > File Editor
 
-// if (!defined('SSL_OFF')) {
-// 	define( 'FORCE_SSL_LOGIN', true ); // Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard
-// 	define( 'FORCE_SSL_ADMIN', true ); // Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard
-// 	// END iThemes Security - Do not modify or remove this line
-//
-// 	// in some setups HTTP_X_FORWARDED_PROTO might contain  // a comma-separated list e.g. http,https  // so check for https existence  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
-// 	$_SERVER['HTTPS'] = 'on';
-// }
+if (!$_ENV['DEV']) {
+	define( 'FORCE_SSL_LOGIN', true ); // Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard
+	define( 'FORCE_SSL_ADMIN', true ); // Force SSL for Dashboard - Security > Settings > Secure Socket Layers (SSL) > SSL for Dashboard
+	// END iThemes Security - Do not modify or remove this line
+
+	// in some setups HTTP_X_FORWARDED_PROTO might contain  // a comma-separated list e.g. http,https  // so check for https existence  if (strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false)
+	$_SERVER['HTTPS'] = 'on';
+}
 
 /* That's all, stop editing! Happy blogging. */
 
