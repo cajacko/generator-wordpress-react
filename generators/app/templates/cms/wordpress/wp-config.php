@@ -84,6 +84,8 @@ $table_prefix  = 'cj_';
  */
 define('WPLANG', '');
 
+// $_SERVER['SERVER_PORT']
+
 /**
  * Set custom paths
  *

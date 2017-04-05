@@ -14,7 +14,7 @@ RUN a2enmod rewrite
 COPY cms/wordpress /var/www/html/
 
 RUN mkdir /var/www/html/content
-# COPY cms/plugins /var/www/content/plugins
+COPY cms/plugins /var/www/content/plugins
 COPY cms/theme /var/www/content/themes/charlie-jackson
 #COPY cms/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
