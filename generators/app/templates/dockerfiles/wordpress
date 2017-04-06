@@ -10,7 +10,7 @@ RUN docker-php-ext-install gd
 RUN docker-php-source delete
 RUN a2enmod rewrite
 
-# COPY php.ini /usr/local/etc/php/
+COPY cms/php.ini /usr/local/etc/php/
 COPY cms/config /var/www/html
 COPY cms/wordpress /var/www/html/admin
 
