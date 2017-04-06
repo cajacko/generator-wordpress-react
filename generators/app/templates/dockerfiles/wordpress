@@ -11,10 +11,11 @@ RUN docker-php-source delete
 RUN a2enmod rewrite
 
 # COPY php.ini /usr/local/etc/php/
-COPY cms/wordpress /var/www/html/
+COPY cms/config /var/www/html
+COPY cms/wordpress /var/www/html/admin
 
 COPY cms/plugins /var/www/html/content/plugins
 COPY cms/theme /var/www/html/content/themes/charlie-jackson
-#COPY cms/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+COPY cms/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN chown -R www-data:www-data /var/www/html/content

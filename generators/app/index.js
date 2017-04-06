@@ -8,10 +8,7 @@ module.exports = class extends Generator {
   initializing() {
     // const cwd = path.join(__dirname, '../../');
     // return checkOutOfDatePackages(cwd, 'Charlie Jackson');
-  }
-
-  initialiseGit() {
-    // return this.composeWith(require.resolve('generator-git-cj/generators/app'));
+    // this.composeWith(require.resolve('generator-git-cj/generators/app'));
   }
 
   writing() {
@@ -33,7 +30,7 @@ module.exports = class extends Generator {
     //   'submodule',
     //   'add',
     //   'git://github.com/WordPress/WordPress.git',
-    //   'cms/wordpress/wordpress'
+    //   'cms/wordpress'
     // ]);
   }
 

@@ -42,8 +42,8 @@
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "check-out-of-date-packages": "^1.1.3",
     "flow-check": "^0.2.1",
-    "generator-git-cj": "^1.0.1",
-    "generator-readme-cj": "^1.0.3",
+    "generator-git-cj": "*",
+    "generator-readme-cj": "*",
     "npm-check": "^5.4.0",
     "yeoman-generator": "^1.1.1"
   },

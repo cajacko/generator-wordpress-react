@@ -83,7 +83,7 @@ if ($_SERVER['SERVER_PORT'] && $_SERVER['SERVER_PORT'] !== '80') {
  *
  * These are required because wordpress is installed in a subdirectory.
  */
-define('WP_SITEURL', $server_url . '/wordpress');
+define('WP_SITEURL', $server_url . '/admin');
 define('WP_HOME', $server_url);
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
 define('WP_CONTENT_URL', $server_url . '/content');
