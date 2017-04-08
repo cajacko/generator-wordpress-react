@@ -20,3 +20,5 @@ COPY cms/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 RUN mkdir /var/www/html/content/uploads
 RUN chown -R www-data:www-data /var/www/html/content/uploads
+RUN chmod 444 /var/www/html/wp-config.php
+RUN chmod 444 /var/www/html/.htaccess

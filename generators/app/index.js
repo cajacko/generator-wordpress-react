@@ -12,16 +12,14 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copyTpl(
+    this.fs.copy(
       this.templatePath('./**/*'),
-      this.destinationPath('./'),
-      { variable: 'value' }
+      this.destinationPath('./')
     );
 
-    this.fs.copyTpl(
+    this.fs.copy(
       this.templatePath('./**/.*'),
-      this.destinationPath('./'),
-      { variable: 'value' }
+      this.destinationPath('./')
     );
   }
 
