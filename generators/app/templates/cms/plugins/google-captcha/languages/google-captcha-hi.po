@@ -1,0 +1,737 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Сaptcha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-10-20 14:09+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
+"Language-Team: Development Logics Solutions Pvt Ltd "
+"<contact@developmentlogics.com>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.5.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: google-captcha.php:34 google-captcha.php:561
+msgid "Google Captcha Settings"
+msgstr "गूगल कॅप्चा सेटिंग्स"
+
+#: google-captcha.php:237
+msgid "Warning"
+msgstr ""
+
+#: google-captcha.php:237
+msgid ""
+"It has been found more than one reCAPTCHA in current form. In this case "
+"reCAPTCHA will not work properly. Please remove all unnecessary reCAPTCHA "
+"blocks."
+msgstr ""
+
+#: google-captcha.php:241
+#, fuzzy
+msgid "Error: You have entered an incorrect reCAPTCHA value"
+msgstr "त्रुटि: आपने एक गलत कॅप्चा मान दर्ज किया है।"
+
+#: google-captcha.php:345
+msgid "You are in the whitelist"
+msgstr ""
+
+#: google-captcha.php:472
+msgid "Site key"
+msgstr "साइट कुंजी "
+
+#: google-captcha.php:477
+msgid "Secret Key"
+msgstr "गुप्त कुंजी"
+
+#: google-captcha.php:485
+msgid "Login form"
+msgstr "प्रवेश फार्म"
+
+#: google-captcha.php:486
+msgid "Registration form"
+msgstr "पंजीकरण फॉर्म"
+
+#: google-captcha.php:487
+msgid "Reset password form"
+msgstr "पुन: पासवर्ड फार्म"
+
+#: google-captcha.php:488
+msgid "Comments form"
+msgstr "टिप्पणियां फार्म"
+
+#: google-captcha.php:507
+msgid "Enter site key"
+msgstr "दर्ज साइट कुंजी "
+
+#: google-captcha.php:508 google-captcha.php:514
+msgid "WARNING: The captcha will not display while you don't fill key fields."
+msgstr "चेतावनी: यदि आप कुंजी क्षेत्र नहीं भरेंगें तो कैप्चा प्रदर्शित नहीं करेगा।"
+
+#: google-captcha.php:513
+msgid "Enter secret key"
+msgstr "दर्ज गुप्त कुंजी"
+
+#: google-captcha.php:540
+msgid "Settings saved"
+msgstr "सेटिंग्स सुरक्षित"
+
+#: google-captcha.php:546
+#, fuzzy
+msgid "All plugin settings were restored"
+msgstr "प्लगइन सेटिंग पृष्ठ पर "
+
+#: google-captcha.php:563 google-captcha.php:1235 google-captcha.php:1256
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: google-captcha.php:564
+msgid "Whitelist"
+msgstr ""
+
+#: google-captcha.php:565
+msgid "Custom code"
+msgstr ""
+
+#: google-captcha.php:566
+msgid "Go PRO"
+msgstr ""
+
+#: google-captcha.php:571
+msgid ""
+"Only one reCAPTCHA can be displayed on the page, it's related to reCAPTCHA "
+"version 1 features."
+msgstr ""
+
+#: google-captcha.php:586
+#, fuzzy, php-format
+msgid ""
+"If you would like to add a Google Captcha (reCAPTCHA) to your page or post, "
+"please use %s button"
+msgstr ""
+"अगर आप अपने खुद के फार्म में गूगल कैप्चा जोड़ना चाहते हैं तो बस इस शॉर्टकोड को अपने पृष्ठ या "
+"पोस्ट पर कॉपी और पेस्ट करेँ ।"
+
+#: google-captcha.php:592
+#, php-format
+msgid ""
+"You can add the Google Captcha (reCAPTCHA) to your page or post by clicking "
+"on %s button in the content edit block using the Visual mode. If the button "
+"isn't displayed or you would like to add the Google Captcha (reCAPTCHA) to "
+"your own form , please use the shortcode %s"
+msgstr ""
+
+#: google-captcha.php:600
+msgid "Authentication"
+msgstr "प्रमाणीकरण"
+
+#: google-captcha.php:601
+#, fuzzy, php-format
+msgid "Before you are able to do something, you must to register %shere%s"
+msgstr " कुछ भी करने से पहले %s यहाँ %s पंजीकरण करायें "
+
+#: google-captcha.php:602
+#, fuzzy
+msgid "Enter site key and secret key, that you get after registration"
+msgstr "पंजीकरण के बाद जो साइट कुंजी और गुप्त कुंजी  मिलती है उसे दर्ज करें।"
+
+#: google-captcha.php:617
+#, fuzzy
+msgid "Test Keys"
+msgstr "गुप्त कुंजी"
+
+#: google-captcha.php:620
+msgid "Options"
+msgstr "विकल्प"
+
+#: google-captcha.php:623
+msgid "Enable reCAPTCHA for"
+msgstr ""
+
+#: google-captcha.php:627
+#, fuzzy
+msgid "WordPress default"
+msgstr "वर्डप्रेस संस्करण"
+
+#: google-captcha.php:636
+msgid "This option is available only for network or for main blog"
+msgstr ""
+
+#: google-captcha.php:644
+msgid "Plugins"
+msgstr "प्लगइन्स"
+
+#: google-captcha.php:652 google-captcha.php:657
+#, php-format
+msgid "You should %s to use this functionality"
+msgstr ""
+
+#: google-captcha.php:653
+#, fuzzy
+msgid "activate"
+msgstr "सक्रिय"
+
+#: google-captcha.php:653
+msgid "for network"
+msgstr ""
+
+#: google-captcha.php:658
+msgid "download"
+msgstr ""
+
+#: google-captcha.php:662
+msgid "Check off for adding captcha to forms on their settings pages"
+msgstr ""
+
+#: google-captcha.php:671
+#, php-format
+msgid ""
+"If you would like to add Google Captcha (reCAPTCHA) to a custom form see %s"
+msgstr ""
+
+#: google-captcha.php:671 google-captcha.php:1257
+msgid "FAQ"
+msgstr "सामान्यतःपूछे जाने वाले प्रश्न (फ ए क्यू )"
+
+#: google-captcha.php:676
+#, fuzzy
+msgid "Hide reCAPTCHA in Comments form for"
+msgstr "रीकैप्चा संस्करण के लिए"
+
+#: google-captcha.php:688
+#, fuzzy
+msgid "Whitelist notification"
+msgstr "प्रमाणीकरण"
+
+#: google-captcha.php:694
+msgid ""
+"This message will be displayed instead of the reCAPTCHA If the user IP is "
+"added to the whitelist"
+msgstr ""
+
+#: google-captcha.php:701
+#, fuzzy
+msgid "reCAPTCHA version"
+msgstr "रीकैप्चा संस्करण:"
+
+#: google-captcha.php:704 google-captcha.php:705 google-captcha.php:706
+#: google-captcha.php:707
+msgid "version"
+msgstr "संस्करण"
+
+#: google-captcha.php:713 google-captcha.php:726
+#, fuzzy
+msgid "reCAPTCHA theme"
+msgstr "रीकैप्चा संस्करण:"
+
+#: google-captcha.php:714 google-captcha.php:727 includes/pro_banners.php:87
+#, fuzzy
+msgid "for version"
+msgstr "संस्करण"
+
+#: google-captcha.php:739
+msgid "Save Changes"
+msgstr "परिवर्तनों को सुरक्षित करें"
+
+#: google-captcha.php:803 google-captcha.php:1276
+msgid "To use Google Captcha you must get the keys from"
+msgstr "गूगल कॅप्चा का उपयोग करने के लिए,आप कुंजी लें "
+
+#: google-captcha.php:804 google-captcha.php:1277
+msgid "here"
+msgstr "यहाँ से "
+
+#: google-captcha.php:805 google-captcha.php:1278
+msgid "and enter them on the"
+msgstr "और उन्हें दर्ज करें "
+
+#: google-captcha.php:807 google-captcha.php:1280
+msgid "plugin setting page"
+msgstr "प्लगइन सेटिंग पृष्ठ पर "
+
+#: google-captcha.php:1000 google-captcha.php:1048
+msgid "Error"
+msgstr "त्रुटि"
+
+#: google-captcha.php:1000 google-captcha.php:1048 google-captcha.php:1078
+#: google-captcha.php:1107
+#, fuzzy
+msgid "You have entered an incorrect reCAPTCHA value"
+msgstr "आपने एक गलत कॅप्चा मान दर्ज किया है।"
+
+#: google-captcha.php:1078 google-captcha.php:1107 google-captcha.php:1133
+msgid "ERROR"
+msgstr ""
+
+#: google-captcha.php:1133
+#, fuzzy
+msgid ""
+"You have entered an incorrect reCAPTCHA value. Click the BACK button on your "
+"browser, and try again."
+msgstr ""
+"त्रुटि: आपने एक गलत कॅप्चा मान दर्ज किया है। अपने ब्राउज़र पर वापस बटन क्लिक करें, और फिर "
+"कोशिश करें।"
+
+#: google-captcha.php:1171
+msgid "Please, complete the captcha and submit \"Test verification\""
+msgstr ""
+
+#: google-captcha.php:1175
+msgid "Test verification"
+msgstr ""
+
+#: google-captcha.php:1190 google-captcha.php:1199
+msgid "The user response was missing"
+msgstr ""
+
+#: google-captcha.php:1192
+msgid "The Secret Key is missing"
+msgstr ""
+
+#: google-captcha.php:1195 google-captcha.php:1204
+msgid "The Secret Key is invalid"
+msgstr ""
+
+#: google-captcha.php:1196 google-captcha.php:1205
+msgid "Check your domain configuration"
+msgstr ""
+
+#: google-captcha.php:1197 google-captcha.php:1206
+#, fuzzy
+msgid "and enter it again"
+msgstr "और उन्हें दर्ज करें "
+
+#: google-captcha.php:1200 google-captcha.php:1208
+msgid "The user response is invalid"
+msgstr ""
+
+#: google-captcha.php:1217
+msgid "The verification is successfully completed"
+msgstr ""
+
+#: google-captcha.php:1258
+msgid "Support"
+msgstr "सहयोग"
+
+#: includes/whitelist.php:64
+msgid "For IP addresses from the whitelist reCAPTCHA will not be displayed"
+msgstr ""
+
+#: includes/whitelist.php:71
+msgid "Add IP to the whitelist"
+msgstr ""
+
+#: includes/whitelist.php:75
+#, fuzzy
+msgid "Save changes"
+msgstr "परिवर्तनों को सुरक्षित करें"
+
+#: includes/whitelist.php:92
+msgid "My IP"
+msgstr ""
+
+#: includes/whitelist.php:96
+msgid "Save IP to the whitelist"
+msgstr ""
+
+#: includes/whitelist.php:100 includes/pro_banners.php:45
+msgid "Allowed formats"
+msgstr ""
+
+#: includes/whitelist.php:101
+msgid "Allowed diapason"
+msgstr ""
+
+#: includes/whitelist.php:106
+msgid "Search IP"
+msgstr ""
+
+#: includes/whitelist.php:160
+msgid "Nothing found"
+msgstr ""
+
+#: includes/whitelist.php:160
+msgid "No IP in the whitelist"
+msgstr ""
+
+#: includes/whitelist.php:167
+msgid "IP address"
+msgstr ""
+
+#: includes/whitelist.php:168
+msgid "Date added"
+msgstr ""
+
+#: includes/whitelist.php:222 includes/whitelist.php:232
+msgid "Remove from the whitelist"
+msgstr ""
+
+#: includes/whitelist.php:318
+msgid "IP added to the whitelist successfully"
+msgstr ""
+
+#: includes/whitelist.php:320 includes/whitelist.php:341
+#: includes/whitelist.php:351
+msgid "Some errors occured"
+msgstr ""
+
+#: includes/whitelist.php:322
+msgid "IP is already in the whitelist"
+msgstr ""
+
+#: includes/whitelist.php:325
+msgid "Invalid IP. See allowed formats."
+msgstr ""
+
+#: includes/whitelist.php:347
+msgid "One IP was deleted successfully"
+msgstr ""
+
+#: includes/whitelist.php:354
+msgid "You have not entered any IP"
+msgstr ""
+
+#: includes/whitelist.php:357
+msgid "You have not entered any IP in to the search form"
+msgstr ""
+
+#: includes/whitelist.php:359
+msgid "Search results for"
+msgstr ""
+
+#: includes/pro_banners.php:17
+msgid "This options is available in Pro version of plugin"
+msgstr ""
+
+#: includes/pro_banners.php:20
+msgid "Close"
+msgstr ""
+
+#: includes/pro_banners.php:28
+msgid "Unlock premium options by upgrading to Pro version"
+msgstr ""
+
+#: includes/pro_banners.php:30
+msgid "Learn More"
+msgstr ""
+
+#: includes/pro_banners.php:43
+msgid "Reason"
+msgstr ""
+
+#: includes/pro_banners.php:46
+msgid "Allowed separators for IPs: a comma"
+msgstr ""
+
+#: includes/pro_banners.php:46 includes/pro_banners.php:47
+msgid "semicolon"
+msgstr ""
+
+#: includes/pro_banners.php:46
+msgid "ordinary space, tab, new line or carriage return"
+msgstr ""
+
+#: includes/pro_banners.php:47
+msgid "Allowed separators for reasons: a comma"
+msgstr ""
+
+#: includes/pro_banners.php:47
+msgid "tab, new line or carriage return"
+msgstr ""
+
+#: includes/pro_banners.php:68
+msgid "Normal"
+msgstr ""
+
+#: includes/pro_banners.php:69
+msgid "Compact"
+msgstr ""
+
+#: includes/pro_banners.php:73
+#, fuzzy
+msgid "reCAPTCHA language"
+msgstr "रीकैप्चा संस्करण:"
+
+#: includes/pro_banners.php:80
+msgid "Use the current site language"
+msgstr ""
+
+#: includes/pro_banners.php:80
+msgid "Using"
+msgstr ""
+
+#: includes/pro_banners.php:86
+#, fuzzy
+msgid "reCAPTCHA size"
+msgstr "रीकैप्चा संस्करण:"
+
+#, fuzzy
+#~ msgid "You have entered an incorrect reCAPTCHA value."
+#~ msgstr "आपने एक गलत कॅप्चा मान दर्ज किया है।"
+
+#, fuzzy
+#~ msgid ""
+#~ "Google Captcha version 2 will not work correctly, since the option "
+#~ "\"allow_url_fopen\" is disabled. Please contact your hosting support "
+#~ "service."
+#~ msgstr ""
+#~ "गूगल कैप्चा संस्करण 2 सही ढंग से काम नहीं करेगा, क्यूंकि विकल्प \"allow_url_fopen\" "
+#~ "आपके होस्टिंग के पीएचपी सेटिंग में अक्षम है ।"
+
+#~ msgid ""
+#~ "Google Captcha version 2 will not work correctly, since the option "
+#~ "\"allow_url_fopen\" is disabled in the PHP settings of your hosting."
+#~ msgstr ""
+#~ "गूगल कैप्चा संस्करण 2 सही ढंग से काम नहीं करेगा, क्यूंकि विकल्प \"allow_url_fopen\" "
+#~ "आपके होस्टिंग के पीएचपी सेटिंग में अक्षम है ।"
+
+#~ msgid "Read more."
+#~ msgstr "और पढ़ें।"
+
+#~ msgid "powered by"
+#~ msgstr "के द्वारा संचालित"
+
+#~ msgid "Activate"
+#~ msgstr "सक्रिय"
+
+#~ msgid "Notice:"
+#~ msgstr "सूचना:"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "प्लगइन की सेटिंग्स बदल दी गयी है। उन्हें बचाने के लिए ,'परिवर्तन सुरक्षित' बटन क्लिक "
+#~ "करना मत भूलना।"
+
+#~ msgid "Contact form"
+#~ msgstr "संपर्क फार्म"
+
+#~ msgid "Activate contact form"
+#~ msgstr "संपर्क फ़ॉर्म को सक्रिय करें"
+
+#~ msgid "Download contact form"
+#~ msgstr "डाउनलोड संपर्क फ़ॉर्म"
+
+#~ msgid "Enable Google Captcha for:"
+#~ msgstr "गूगल कैप्चा के लिए सक्षम करें:"
+
+#~ msgid "Hide captcha for:"
+#~ msgstr "कैप्चा छुपाएं:"
+
+#~ msgid "Theme:"
+#~ msgstr "विषय:"
+
+#~ msgid "Google Captcha"
+#~ msgstr "गूगल कॅप्चा"
+
+#~ msgid "requires"
+#~ msgstr "आवश्यकता है"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "या अधिक कि है,इसलिये यह निष्क्रिय कर दिया गया है। वर्डप्रेस का उन्नयन करो और फिर "
+#~ "कोशिश करें।"
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "वापस वर्डप्रेस पर"
+
+#~ msgid "Plugins page"
+#~ msgstr "प्लगइन्स पृष्ठ"
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "यदि आप हमारे प्लगइन को पसंद करें तो कृपया वर्डप्रेस पर हमें 5 सितारों दे ।"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "प्लगइन का मुल्यांकन"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "अगर कुछ गलत लगे तो हमें संपर्क करें ।"
+
+#~ msgid "Public Key"
+#~ msgstr "सार्वजनिक कुंजी"
+
+#~ msgid "Private Key"
+#~ msgstr "निजी कुंजी"
+
+#~ msgid "Enter public key"
+#~ msgstr "सार्वजनिक कुंजी दर्ज करें"
+
+#~ msgid "Not set"
+#~ msgstr "सेट नहीं"
+
+#~ msgid "On"
+#~ msgstr "चालू "
+
+#~ msgid "Off"
+#~ msgstr "बंद"
+
+#~ msgid "N/A"
+#~ msgstr "लागू नहीं (एन / ए)"
+
+#~ msgid " Mb"
+#~ msgstr "एमबी"
+
+#~ msgid "Yes"
+#~ msgstr "हाँ"
+
+#~ msgid "No"
+#~ msgstr "नहीं "
+
+#~ msgid "Operating System"
+#~ msgstr "प्रचालन तंत्र"
+
+#~ msgid "Server"
+#~ msgstr "सर्वर"
+
+#~ msgid "Memory usage"
+#~ msgstr "स्मृति उपयोग"
+
+#~ msgid "MYSQL Version"
+#~ msgstr "MySQL संस्करण"
+
+#~ msgid "SQL Mode"
+#~ msgstr "SQL साधन"
+
+#~ msgid "PHP Safe Mode"
+#~ msgstr "पीएचपी सुरक्षित साधन"
+
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "पीएचपी URL fopen की अनुमति दें"
+
+#~ msgid "PHP Memory Limit"
+#~ msgstr "पीएचपी स्मृति सीमा"
+
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "पीएचपी अधिकतम अपलोड विस्तार"
+
+#~ msgid "PHP Max Post Size"
+#~ msgstr "पीएचपी अधिकतम पोस्ट का विस्तार"
+
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "पीएचपी अधिकतम स्क्रिप्ट समय निष्पादित"
+
+#~ msgid "PHP Exif support"
+#~ msgstr "पीएचपी Exif समर्थन"
+
+#~ msgid "PHP IPTC support"
+#~ msgstr "पीएचपी IPTC समर्थन"
+
+#~ msgid "PHP XML support"
+#~ msgstr "XML पीएचपी समर्थन"
+
+#~ msgid "Home URL"
+#~ msgstr "गृह  URL "
+
+#~ msgid "WordPress DB Version"
+#~ msgstr "वर्डप्रेस DB संस्करण"
+
+#~ msgid "Multisite"
+#~ msgstr "मल्टीसाइट"
+
+#~ msgid "Active Theme"
+#~ msgstr "सक्रिय विषय"
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "कृपया एक मान्य ईमेल पता दें।"
+
+#~ msgid "Email with system info is sent to "
+#~ msgstr "सिस्टम जानकारी के साथ ईमेल भेजा है"
+
+#~ msgid "Thank you for contacting us."
+#~ msgstr "हमें संपर्क करने के लिए धन्यवाद।"
+
+#~ msgid "Sorry, email message could not be delivered."
+#~ msgstr "क्षमा करें, ईमेल संदेश वितरित नहीं किया जा सका है।"
+
+#~ msgid "Themes"
+#~ msgstr "विषयों"
+
+#~ msgid "System status"
+#~ msgstr "तंत्र की स्थिति"
+
+#~ msgid "All"
+#~ msgstr "सभी"
+
+#~ msgid "Installed"
+#~ msgstr "स्थापित"
+
+#~ msgid "Recommended"
+#~ msgstr "सलाह दी जाती है  "
+
+#~ msgid "Installed plugins"
+#~ msgstr "स्थापित प्लगइन्स"
+
+#~ msgid "Go"
+#~ msgstr "जाएं"
+
+#~ msgid "DONATE"
+#~ msgstr "दान"
+
+#~ msgid "Activate this plugin"
+#~ msgstr "प्लगइन सक्रिय करना "
+
+#~ msgid "Recommended plugins"
+#~ msgstr "प्लगइन जिनकी सलाह दी जाती है "
+
+#~ msgid "Install now"
+#~ msgstr "अभी स्थापित करें"
+
+#~ msgid "Try again"
+#~ msgstr "पुनः प्रयास करें"
+
+#~ msgid "Preview &#8220;%s&#8221;"
+#~ msgstr "पूर्व दर्शन  &#8220;%s&#8221;"
+
+#~ msgid "Install %s"
+#~ msgstr "स्थापित करें %s"
+
+#~ msgid "Install Now"
+#~ msgstr "अभी स्थापित करें"
+
+#~ msgid "Update to version %s"
+#~ msgstr "संस्करण अपडेट करें"
+
+#~ msgid "Update"
+#~ msgstr "अपडेट"
+
+#~ msgid "Preview %s"
+#~ msgstr "पूर्व दर्शन %s"
+
+#~ msgid "Preview"
+#~ msgstr "पूर्व दर्शन"
+
+#~ msgid "By %s"
+#~ msgstr "द्वारा %s"
+
+#~ msgid "Details"
+#~ msgstr "विवरण"
+
+#~ msgid "Already Installed"
+#~ msgstr "पहले से ही स्थापित"
+
+#~ msgid "Environment"
+#~ msgstr "पर्यावरण"
+
+#~ msgid "Active Plugins"
+#~ msgstr "सक्रिय प्लगइन्स"
+
+#~ msgid "Inactive Plugins"
+#~ msgstr "निष्क्रिय प्लगइन्स"
+
+#~ msgid "Send to support"
+#~ msgstr "मदद के लिए भेजें "
+
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "कस्टम ईमेल को भेजें &#187;"
+
+#~ msgid "WARNING: The captcha will not display while you not fill key fields."
+#~ msgstr "चेतावनी: यदि आपने कुंजी क्षेत्रों नहीं भरें है तो कैप्चा प्रदर्शित नहीं करेगा।"
