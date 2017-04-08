@@ -18,4 +18,5 @@ COPY cms/plugins /var/www/html/content/plugins
 COPY cms/theme /var/www/html/content/themes/charlie-jackson
 COPY cms/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
-RUN chown -R www-data:www-data /var/www/html/content
+RUN mkdir /var/www/html/content/uploads
+RUN chown -R www-data:www-data /var/www/html/content/uploads

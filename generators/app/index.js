@@ -35,9 +35,16 @@ module.exports = class extends Generator {
   }
 
   end() {
-    this.spawnCommandSync('chmod', ['+x', './scripts/install']);
-    this.spawnCommandSync('chmod', ['+x', './scripts/update']);
-    this.spawnCommandSync('chmod', ['+x', './scripts/wordpress-bash']);
+    this.spawnCommandSync('find', [
+      './scripts',
+      '-type',
+      'f',
+      '-exec',
+      'chmod',
+      '+x',
+      '{}',
+      ';'
+    ]);
   }
 
   readme() {

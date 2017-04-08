@@ -1,0 +1,7 @@
+#!/bin/sh
+
+docker stop wordpress
+docker rm wordpress
+
+# docker build --no-cache -t wordpress -f dockerfiles/wordpress .
+docker build -t wordpress -f dockerfiles/wordpress .

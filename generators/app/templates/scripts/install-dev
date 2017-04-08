@@ -1,0 +1,6 @@
+#!/bin/sh
+
+./scripts/support/run-mysql
+./scripts/support/run-wordpress-dev
+./scripts/support/dev-permissions
+./scripts/support/log-ip

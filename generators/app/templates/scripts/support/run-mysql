@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker stop mysql
+docker rm mysql
+
+docker run -d --name mysql -p 3306:3306 --env-file ./.env mysql:5.7

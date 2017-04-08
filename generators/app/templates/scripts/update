@@ -1,11 +1,4 @@
 #!/bin/sh
 
-docker stop wordpress
-docker rm wordpress
-
-# docker build --no-cache -t wordpress -f dockerfiles/wordpress .
-docker build -t wordpress -f dockerfiles/wordpress .
-
-docker run --link mysql:mysql -p 80:80 -d --name wordpress --env-file ./.env wordpress
-
-docker-machine ip
+./scripts/support/run-wordpress
+./scripts/support/log-ip

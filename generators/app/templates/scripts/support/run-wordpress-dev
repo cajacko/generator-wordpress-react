@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./scripts/support/build-wordpress
+
+docker run -v $(pwd)/cms/plugins:/var/www/html/content/plugins --link mysql:mysql -p 80:80 -d --name wordpress --env-file ./.env wordpress
