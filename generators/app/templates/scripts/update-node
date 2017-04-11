@@ -1,0 +1,10 @@
+#!/bin/sh
+
+docker stop node
+docker rm node
+
+# docker build --no-cache -t node -f dockerfiles/node .
+docker build -t node -f dockerfiles/node .
+docker run --link mysql:mysql -p 80:5000 -d --name node --env-file ./.env node
+
+./scripts/support/log-ip

@@ -1,8 +1,8 @@
 /* @flow */
 
 const Generator = require('yeoman-generator');
-const path = require('path');
-const checkOutOfDatePackages = require('check-out-of-date-packages');
+// const path = require('path');
+// const checkOutOfDatePackages = require('check-out-of-date-packages');
 
 module.exports = class extends Generator {
   initializing() {
@@ -23,14 +23,14 @@ module.exports = class extends Generator {
     );
   }
 
-  wordpress() {
-    // this.spawnCommandSync('git', [
-    //   'submodule',
-    //   'add',
-    //   'git://github.com/WordPress/WordPress.git',
-    //   'cms/wordpress'
-    // ]);
-  }
+  // wordpress() {
+  //   this.spawnCommandSync('git', [
+  //     'submodule',
+  //     'add',
+  //     'git://github.com/WordPress/WordPress.git',
+  //     'cms/wordpress'
+  //   ]);
+  // }
 
   end() {
     this.spawnCommandSync('find', [

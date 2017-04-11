@@ -2,4 +2,5 @@
 
 ./scripts/support/run-mysql
 ./scripts/support/run-wordpress
+./scripts/update-node
 ./scripts/support/log-ip

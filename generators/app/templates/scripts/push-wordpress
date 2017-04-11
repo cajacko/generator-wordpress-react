@@ -1,0 +1,18 @@
+#!/bin/sh
+
+copyFiles() {
+  for f in $(find $1 -type f)
+  do
+    replacement=
+    result_string="${f/$1/$replacement}"
+    # echo $result_string
+    echo $f
+    # echo $2$result_string
+    docker cp $f wordpress:$2$result_string
+  done
+}
+
+# copyFiles cms/config /var/www/html
+# copyFiles cms/wordpress /var/www/html/admin
+# copyFiles cms/plugins /var/www/html/content/plugins
+copyFiles cms/theme /var/www/html/content/themes/charlie-jackson
