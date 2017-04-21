@@ -1,6 +1,6 @@
 {
   "name": "generator-wordpress-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Yeoman generator for setting up a headless Wordpress website with a node/reactjs powered front end",
   "author": {
     "name": "Charlie Jackson",
